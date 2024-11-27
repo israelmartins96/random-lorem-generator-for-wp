@@ -1,26 +1,26 @@
 <?php
 /**
- * LoremPress for WP
+ * LoremPress
  *
- * @package             LoremPressForWP
- * @author              Israel Martins
+ * @package             LoremPress
+ * @author              Lightbulb Devs
  * @copyright           Copyright (c) 2024, Lightbulb Devs
  * @license             GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:         LoremPress for WP
- * Plugin URI:          https://israelmartins.com
- * Description:         Add dummy text as a placeholder while creating your WordPress website, web page, blog post etc.
+ * Plugin Name:         LoremPress
+ * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
+ * Description:         Add dummy text content as a placeholder while creating your WordPress website, web page, blog post etc.
  * Version:             0.1.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
- * Author:              Israel Martins
- * Author URI:          https://israelmartins.com
- * Donate link:         https://israelmartins.com/donate/
+ * Author:              Lightbulb Devs
+ * Author URI:          https://lightbulbdevs.com
+ * Donate link:         https://lightbulbdevs.com/donate/lorempress/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:          https://israelmartins.com
- * Text Domain:         lorempress-for-wp
+ * Update URI:          https://lightbulbdevs.com/lorempress/wp/update/
+ * Text Domain:         lorempress
  * Domain Path:         /languages/
  */
 
@@ -41,3 +41,59 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Copyright 2024 Lightbulb Devs
  */
+
+/**
+ * Abort if this file is accessed directly.
+ */
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Current plugin version.
+ * 
+ * @since 0.1.0
+ */
+define( 'LOREMPRESS_VERSION', '0.1.0' );
+
+/**
+ * Plugin root path.
+ * 
+ * @since 0.1.0
+ */
+define( 'LOREMPRESS_PATH', plugin_dir_path( __FILE__ ) );
+
+/**
+ * Require Composer Autoload.
+ */
+if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
+    require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+}
+
+/**
+ * Runs during plugin activation.
+ * In includes/base/Activator.php
+ * 
+ * @since 0.1.0
+ */
+function activate_lorempress() {
+    \LoremPress\Includes\Base\Activator::activate();
+}
+
+/**
+ * Runs during plugin deactivation.
+ * In includes/base/Deactivator.php
+ *
+ * @since 0.1.0
+ */
+function deactivate_lorempress() {
+    \LoremPress\Includes\Base\Deactivator::deactivate();
+}
+
+/**
+ * Registers activation hook.
+ */
+register_activation_hook( __FILE__, 'activate_lorempress' );
+
+/**
+ * Registers deactivation hook.
+ */
+register_deactivation_hook( __FILE__, 'deactivate_lorempress' );

@@ -1,0 +1,19 @@
+{
+    "name": "lightbulb-devs/lorempress",
+    "description": "WordPress plugin to add dummy text content as a placeholder while creating a WordPress website, web page, blog post etc.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Israel Martins",
+            "email": "hello@israelmartins.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LoremPress\\Includes\\": "./includes"
+        }
+    }
+}
