@@ -1,0 +1,1 @@
+Add dummy text as a placeholder while creating your WordPress website, web page, blog post etc.
