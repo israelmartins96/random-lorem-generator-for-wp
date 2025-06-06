@@ -29,7 +29,7 @@ class LoremPress_Shortcode {
 
     public $lorempress_tag;
     
-    public function lorempress_get_shortcode_content( $lorempress_atts, $lorempress_content, $lorempress_tag ) {
+    public function lorempress_get_shortcode_content( $lorempress_atts = array(), $lorempress_content = '', $lorempress_tag = '' ) {
         return $lorempress_content;
     }
     
