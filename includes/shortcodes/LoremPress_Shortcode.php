@@ -3,7 +3,7 @@
 /**
  * The plugin shortcode.
  * 
- * @since 0.2.0
+ * @since 0.2.1
  * 
  * @package LoremPress
  * @subpackage LoremPress/Includes
