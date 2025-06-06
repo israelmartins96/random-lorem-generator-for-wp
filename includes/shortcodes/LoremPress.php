@@ -21,4 +21,12 @@ namespace LoremPress\Includes;
  * @subpackage LoremPress/Includes
  * @author Israel Martins <hello@israelmartins.com>
  */
-class LoremPress {}
+class LoremPress {
+
+    public $lorempress_atts = array();
+
+    public $lorempress_content = '';
+
+    public $lorempress_tag;
+    
+}
