@@ -28,5 +28,17 @@ class LoremPress {
     public $lorempress_content = '';
 
     public $lorempress_tag;
+
+    public function set_lorempress_atts() {
+        $this->lorempress_atts = array();
+    }
+    
+    public function set_lorempress_content() {
+        $this->lorempress_content = 'Hello from LoremPress (by Lightbulb Devs)';
+    }
+
+    public function set_lorempress_tag() {
+        $this->lorempress_tag = 'lorempress';
+    }
     
 }
