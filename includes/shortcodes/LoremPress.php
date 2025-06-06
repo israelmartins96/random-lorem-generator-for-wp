@@ -28,6 +28,16 @@ class LoremPress {
     public $lorempress_content = '';
 
     public $lorempress_tag;
+    
+    public function lorempress_get_shortcode_content( $lorempress_atts, $lorempress_content, $lorempress_tag ) {
+        $this->set_lorempress_atts();
+        
+        $this->set_lorempress_content();
+
+        $this->set_lorempress_tag();
+        
+        return $lorempress_content;
+    }
 
     public function set_lorempress_atts() {
         $this->lorempress_atts = array();
