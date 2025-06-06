@@ -11,7 +11,7 @@
  * Plugin Name:         LoremPress
  * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
  * Description:         Add dummy text content as a placeholder while creating your WordPress website, web page, blog post etc.
- * Version:             0.1.0
+ * Version:             0.2.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
@@ -52,7 +52,7 @@ defined( 'ABSPATH' ) || exit;
  * 
  * @since 0.1.0
  */
-define( 'LOREMPRESS_VERSION', '0.1.0' );
+define( 'LOREMPRESS_VERSION', '0.2.0' );
 
 /**
  * Plugin root path.
