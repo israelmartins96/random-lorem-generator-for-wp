@@ -11,7 +11,7 @@
  * Plugin Name:         LoremPress
  * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
  * Description:         Add dummy text content as a placeholder while creating your WordPress website, web page, blog post etc.
- * Version:             0.2.0
+ * Version:             0.2.1
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
@@ -42,6 +42,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2024 Lightbulb Devs
  */
 
+use \LoremPress\Includes\Shortcodes\LoremPress_Shortcode;
+
 /**
  * Abort if this file is accessed directly.
  */
@@ -52,7 +54,7 @@ defined( 'ABSPATH' ) || exit;
  * 
  * @since 0.1.0
  */
-define( 'LOREMPRESS_VERSION', '0.2.0' );
+define( 'LOREMPRESS_VERSION', '0.2.1' );
 
 /**
  * Plugin root path.
@@ -97,3 +99,18 @@ register_activation_hook( __FILE__, 'activate_lorempress' );
  * Registers deactivation hook.
  */
 register_deactivation_hook( __FILE__, 'deactivate_lorempress' );
+
+/**
+ * Create new LoremPress shortcode object if the corresponding class exists.
+ */
+if ( class_exists( '\LoremPress\\Includes\\Shortcodes\\LoremPress_Shortcode' ) ) {
+    $lorempress_shortcode = new LoremPress_Shortcode;
+    
+    // Set initial values for the attributes, content, and tag of the shortcode object.
+    $lorempress_shortcode->lorempress_preset_shortcode_parameters();
+}
+
+/**
+ * Add LoremPress shortcode.
+ */
+add_shortcode( $lorempress_shortcode->lorempress_shortcode_tag, array( $lorempress_shortcode, 'lorempress_get_shortcode_content' ) );
