@@ -144,7 +144,7 @@ function lorempress_register_scripts() {
      */
     wp_register_script(
         'lorempress-dummy-text-generator',
-        LOREMPRESS_PLUGIN_URL . 'assets/src/js/lorempress-dummy-text-generator.js',
+        LOREMPRESS_PLUGIN_URL . 'assets/js/lorempress-dummy-text-generator.min.js',
         array(),
         '1.0.0',
         true
