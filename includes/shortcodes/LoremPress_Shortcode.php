@@ -11,7 +11,7 @@
  * 
  * @package LoremPress
  * @subpackage LoremPress/Includes
- * @version 0.1.1
+ * @version 1.0.0
  */
 
 namespace LoremPress\Includes\Shortcodes;
