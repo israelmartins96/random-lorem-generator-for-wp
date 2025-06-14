@@ -11,7 +11,7 @@
  * 
  * @package LoremPress
  * @subpackage LoremPress/Includes
- * @version 0.1.0
+ * @version 0.1.1
  */
 
 namespace LoremPress\Includes\Shortcodes;
@@ -111,7 +111,7 @@ class LoremPress_Shortcode {
      * @since 0.1.0
      */
     public function set_lorempress_shortcode_content() {
-        $this->lorempress_shortcode_content = '<p>Hello from LoremPress (by Lightbulb Devs)</p>';
+        $this->lorempress_shortcode_content = '<p class="lorempress-shortcode-pargraph">Hello from LoremPress (by Lightbulb Devs)</p>';
     }
 
     /**
