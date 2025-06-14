@@ -54,14 +54,21 @@ defined( 'ABSPATH' ) || exit;
  * 
  * @since 0.1.0
  */
-define( 'LOREMPRESS_VERSION', '0.2.1' );
+! defined( 'LOREMPRESS_VERSION' ) ? define( 'LOREMPRESS_VERSION', '0.2.1' ) : '';
 
 /**
  * Plugin root path.
  * 
  * @since 0.1.0
  */
-define( 'LOREMPRESS_PATH', plugin_dir_path( __FILE__ ) );
+! defined( 'LOREMPRESS_PLUGIN_PATH' ) ? define( 'LOREMPRESS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
+
+/**
+ * Plugin base URL.
+ * 
+ * @since 0.2.1
+ */
+! defined( 'LOREMPRESS_PLUGIN_URL' ) ? define( 'LOREMPRESS_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
 
 /**
  * Require Composer Autoload.
