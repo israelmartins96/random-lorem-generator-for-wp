@@ -105,6 +105,7 @@ class LoremPress_Shortcode {
      * properties with default values.
      *
      * @since 1.0.0
+     * @return void
      */
     public function lorempress_preset_shortcode_parameters() {
         $this->set_lorempress_shortcode_atts();
@@ -118,6 +119,7 @@ class LoremPress_Shortcode {
      * Sets the shortcode attributes.
      *
      * @since 1.0.0
+     * @return void
      */
     private function set_lorempress_shortcode_atts() {
         $this->lorempress_shortcode_atts = array();
@@ -127,6 +129,7 @@ class LoremPress_Shortcode {
      * Sets the shortcode content.
      *
      * @since 1.0.0
+     * @return void
      */
     private function set_lorempress_shortcode_content() {
         $this->lorempress_shortcode_content = '<p class="lorempress-shortcode-pargraph"></p>';
@@ -136,6 +139,7 @@ class LoremPress_Shortcode {
      * Sets the shortcode tag.
      *
      * @since 1.0.0
+     * @return void
      */
     private function set_lorempress_shortcode_tag() {
         $this->lorempress_shortcode_tag = 'lorempress';

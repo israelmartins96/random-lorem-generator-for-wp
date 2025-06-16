@@ -99,6 +99,7 @@ class Enqueue {
      * page or post content. If found, it enqueues the 'lorempress-dummy-text-generator'
      * JavaScript file only on the front-end.
      *
+     * @since 1.0.0
      * @param string $content The content of the post or page.
      * @return string The content of the post or page (unchanged).
      */

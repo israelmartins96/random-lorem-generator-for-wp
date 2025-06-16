@@ -34,8 +34,8 @@ final class Init {
      * These classes are intended to be instantiated and have their
      * register method called during the plugin's initialisation.
      * 
-     * @return      array full list of classes.
      * @since       1.0.0
+     * @return      array full list of classes.
     */
     public static function get_services() {
         $services = array(
@@ -53,6 +53,7 @@ final class Init {
      * defined within each service class.
      * 
      * @since       1.0.0
+     * @return void
     */
     public static function register_services() {
         foreach ( self::get_services() as $class ) {
@@ -69,9 +70,9 @@ final class Init {
      * 
      * This is a helper method used internally to instantiate service classes.
      * 
-     * @param       class $class
-     * @return      class new instance of the class
      * @since       1.0.0
+     * @param       class $class.
+     * @return      class $service new instance of the class.
     */
     private static function instantiate( $class ) {
         $service = new $class();
