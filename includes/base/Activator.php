@@ -7,6 +7,7 @@
  * 
  * @package LoremPress
  * @subpackage LoremPress/Includes
+ * @version 1.0.0
  */
 
 namespace LoremPress\Includes\Base;
