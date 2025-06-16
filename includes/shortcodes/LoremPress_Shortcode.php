@@ -3,11 +3,9 @@
 /**
  * Manages the LoremPress plugin shortcode.
  * 
- * This file contains the LoremPress_Shortcode class, which is responsible for
- * defining and managing the attributes, content, and tag for the
- * LoremPress shortcode.
+ * This file is responsible for defining and managing the attributes, content, and tag for the LoremPress shortcode.
  * 
- * @since 0.2.0
+ * @since 1.0.0
  * 
  * @package LoremPress
  * @subpackage LoremPress/Includes
@@ -23,7 +21,7 @@ namespace LoremPress\Includes\Shortcodes;
  * behaviour of the LoremPress shortcode, including its attributes, content,
  * and tag.
  * 
- * @since 0.2.0
+ * @since 1.0.0
  * @package LoremPress
  * @subpackage LoremPress/Includes
  * @author Israel Martins <hello@israelmartins.com>
@@ -33,7 +31,7 @@ class LoremPress_Shortcode {
     /**
      * Stores the shortcode attributes.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      * @access public
      * @var array $lorempress_shortcode_atts The shortcode attributes.
      */
@@ -42,7 +40,7 @@ class LoremPress_Shortcode {
     /**
      * Stores the shortcode content.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      * @access public
      * @var string $lorempress_shortcode_content The shortcode content.
      */
@@ -51,11 +49,31 @@ class LoremPress_Shortcode {
     /**
      * Stores the shortcode tag.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      * @access public
      * @var string $lorempress_shortcode_tag The shortcode tag.
      */
     public $lorempress_shortcode_tag = '';
+
+    /**
+     * Registers the LoremPress shortcode.
+     * 
+     * Checks if the shortcode tag already exists. If not, it presets the shortcode
+     * parameters and registers the shortcode.
+     *
+     * @since 1.0.0
+     * @return void
+     */
+    public function register() {
+        /**
+         * Add LoremPress shortcode.
+         */
+        if ( ! shortcode_exists( $this->lorempress_shortcode_tag ) ) {
+            $this->lorempress_preset_shortcode_parameters();
+            
+            add_shortcode( $this->lorempress_shortcode_tag, array( $this, 'lorempress_get_shortcode_content' ) );
+        }
+    }
     
     /**
      * Retrieves the shortcode content.
@@ -64,7 +82,7 @@ class LoremPress_Shortcode {
      * but the parameters passed to the function are not used. It then returns the
      * shortcode content stored in the instance property.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      * @param array  $lorempress_atts    Shortcode attributes (not currently used).
      * @param string $lorempress_content Shortcode content (not currently used).
      * @param string $lorempress_tag     Shortcode tag (not currently used).
@@ -86,7 +104,7 @@ class LoremPress_Shortcode {
      * This method calls the individual setter methods to initialise the shortcode's
      * properties with default values.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public function lorempress_preset_shortcode_parameters() {
         $this->set_lorempress_shortcode_atts();
@@ -99,27 +117,27 @@ class LoremPress_Shortcode {
     /**
      * Sets the shortcode attributes.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
-    public function set_lorempress_shortcode_atts() {
+    private function set_lorempress_shortcode_atts() {
         $this->lorempress_shortcode_atts = array();
     }
     
     /**
      * Sets the shortcode content.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
-    public function set_lorempress_shortcode_content() {
+    private function set_lorempress_shortcode_content() {
         $this->lorempress_shortcode_content = '<p class="lorempress-shortcode-pargraph"></p>';
     }
 
     /**
      * Sets the shortcode tag.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
-    public function set_lorempress_shortcode_tag() {
+    private function set_lorempress_shortcode_tag() {
         $this->lorempress_shortcode_tag = 'lorempress';
     }
     
