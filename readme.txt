@@ -53,7 +53,7 @@ No, LoremPress is designed to be very lightweight and optimised for performance.
 
 == Changelog ==
 
-= 1.0.0 - 2025-06-1 =
+= 1.0.0 - 2025-06-17 =
 * Initial release.
 * Feature: Implemented `[lorempress]` shortcode for generating lorem ipsum text paragraph.
 
