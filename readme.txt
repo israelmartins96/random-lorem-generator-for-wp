@@ -47,9 +47,9 @@ No, LoremPress is designed to be very lightweight and optimised for performance.
 
 == Screenshots ==
 
-1. An example of the front-end without the LoremPress shortcode.
-2. An example of the LoremPress shortcode inserted into a post content with the WordPress editor.
-3. A screenshot of the generated lorem ipsum text on the front-end.
+1. A front-end view of a post without the LoremPress shortcode.
+2. The LoremPress shortcode inserted into a post content with the WordPress editor.
+3. A front-end view of a post with the generated lorem ipsum text from the LoremPress shortcode.
 
 == Changelog ==
 
