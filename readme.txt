@@ -49,11 +49,11 @@ No, LoremPress is designed to be very lightweight and optimised for performance.
 
 1. A front-end view of a post without the LoremPress shortcode.
 2. The LoremPress shortcode inserted into a post content with the WordPress editor.
-3. A front-end view of a post with the generated lorem ipsum text from the LoremPress shortcode.
+3. A front-end view of a post with a generated lorem ipsum paragraph from the LoremPress shortcode.
 
 == Changelog ==
 
-= 1.0.0 - 2025-06-14 =
+= 1.0.0 - 2025-06-1 =
 * Initial release.
 * Feature: Implemented `[lorempress]` shortcode for generating lorem ipsum text paragraph.
 
