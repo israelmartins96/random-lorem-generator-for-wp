@@ -27,7 +27,7 @@ There is not currently any automated deployment. Instead, once a release is publ
 ## Contributing
 Community made feature requests, patches, localisations, bug reports, and contributions are always welcome and are crucial to ensure LoremPress continues to grow.
 
-If interested in contributing, feel free to reach out to hello@israelmartins.com.
+If interested in contributing, feel free to reach out to lorempress@israelmartins.com.
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see [the releases in this repository](https://github.com/israelmartins96/lorempress-for-wp/releases).
