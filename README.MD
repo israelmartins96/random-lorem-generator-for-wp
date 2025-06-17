@@ -1,63 +1,41 @@
-=== LoremPress - Quick Dummy Text Placeholder for WordPress ===
-Contributors: israelmartins, lightbulbdevs
-Author URI: https://lightbulbdevs.com/
-Plugin URI: https://lightbulbdevs.com/lorempress/wp/
-Donate link: https://lightbulbdevs.com/lorempress/wp/donate/
-Tags:  lorem ipsum, dummy text, dummy content, placeholder
-Requires at least: 5.2
-Tested up to: 6.8.1
-Requires PHP: 7.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+#LoremPress
+All you need to quickly add lorem ipsum placeholder text paragraphs while creating your WordPress website, web page, blog post, etc.
 
-Quickly add lorem ipsum dummy text as a placeholder text while creating your WordPress website, web page, blog post, etc.
+Feel free to browse the code and make suggestions/requests. Thanks!
 
-== Description ==
+## Support
+This is a developer's portal for Popup Maker and **should not** be used for support. Please [create a support ticket here](https://wordpress.org/support/plugin/lorempress/).
 
-LoremPress is a simple and easy-to-use WordPress plugin designed to help you quickly insert lorem ipsum dummy text as a placeholder in your posts and pages. Whether you're mocking up a new page, testing layouts, or just need placeholder content, LoremPress provides a convenient solution directly within your WordPress editor.
+## Getting Started
 
-= Key Features: =
+### Downloading And Using As A Plugin
+To use this plugin, you must download from [the releases page](https://github.com/israelmartins96/lorempress-for-wp/releases). With each release, there is an attached zip, named something similar to `lorempress-for-wp_v1.0.0.zip
+`. Download the appropriate zip file and then upload into your WordPress site as a normal plugin.
 
-* **Easy Shortcode Integration:** Simply insert `[lorempress]` into any post or page content.
-* **Lightweight and Efficient:** Designed to be minimal and not impact your site's performance.
-* **No Configuration Needed:** Works out of the box without any settings to adjust.
+Once installed and activated:
+1. Go to wp-admin,
+1. Edit the post or page where you want to add the lorem ipsum placeholder paragraph(s), and
+1. Insert only the `[lorempress]` shortcode on a new line to add your first lorem ipsum placeholder paragraph.
 
-Perfect for when you need realistic-looking placeholder paragraphs without the distraction of meaningful content, ensuring your designs and layouts are the focus.
+## Built With
+* Vanilla JavaScript. No JavaScript library is used at this time.
 
-== Installation ==
+## Deployment
+This is a WordPress plugin that is hosted on the WordPress.org SVN repo.
+There is not currently any automated deployment. Instead, once a release is published on GitHub, that release is manually uploaded to the SVN.
 
-1. **Upload:** Upload the `lorempress-for-wp` folder to the `/wp-content/plugins/` directory.
-1. **Activate:** Activate the plugin through the 'Plugins' menu in WordPress.
-1. **Use:** Insert the `[lorempress]` shortcode on a new line in any post or page where you want to generate a lorem ipsum paragraph.
+## Contributing
+Community made feature requests, patches, localisations, bug reports, and contributions are always welcome and are crucial to ensure LoremPress continues to grow.
 
-== Frequently Asked Questions ==
+If interested in contributing, feel free to reach out to lorempress@israelmartins.com.
 
-= How do I use the plugin? =
-Simply insert the `[lorempress]` shortcode on a new line in the content editor of any post or page. On the front-end view of the post or page, the shortcode is replaced with a randomly generated lorem ipsum paragraph.
+## Versioning
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see [the releases in this repository](https://github.com/israelmartins96/lorempress-for-wp/releases).
 
-= Can I customise the number of sentences in a paragraph? =
-Currently, LoremPress generates a default amount of text. Future versions may include options for customising the length of the generated text content. If you would like to submit a feature request for that or something else, [you may do so here](https://lightbulbdevs.com/lorempress/wp/feature-request/).
+## Developers
+* Israel Martins - Lead Developer
 
-= Is the lorem ipsum text truly random? =
-Yes, the text of each paragraph is made up of randomly generated lorem ipsum sentences which mimic the appearance of real text without carrying any actual meaning.
+See also [the list of contributors](https://github.com/israelmartins96/lorempress-for-wp/graphs/contributors) who participated in this project.
 
-= Will the plugin affect my site's performance? =
-No, LoremPress is designed to be very lightweight and optimised for performance. It is only loaded and executed when the LoremPress shortcode is present on a page, and its impact on performance is negligible.
-
-== Screenshots ==
-
-1. An example of the front-end without the LoremPress shortcode.
-2. An example of the LoremPress shortcode inserted into a post content with the WordPress editor.
-3. A screenshot of the generated lorem ipsum text on the front-end.
-
-== Changelog ==
-
-= 1.0.0 - 2025-06-14 =
-* Initial release.
-* Feature: Implemented `[lorempress]` shortcode for generating lorem ipsum text paragraph.
-
-== Upgrade Notice ==
-
-= 1.0.0 =
-This is the initial release of LoremPress. No upgrade actions are required.
+## License
+This project is licensed under the GPLv2 License.
