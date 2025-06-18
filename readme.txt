@@ -53,7 +53,7 @@ No, LoremPress is designed to be very lightweight and optimised for performance.
 
 == Changelog ==
 
-= 1.0.0 - 2025-06-17 =
+= 1.0.0 - 2025-06-18 =
 * Initial release.
 * Feature: Implemented `[lorempress]` shortcode for generating lorem ipsum text paragraph.
 
@@ -61,3 +61,6 @@ No, LoremPress is designed to be very lightweight and optimised for performance.
 
 = 1.0.0 =
 This is the initial release of LoremPress. No upgrade actions are required.
+
+== Development Note ==
+If you want to make changes to the source code in your development/staging site, you can find the relevant information to help you get started in the plugin's development repo. Feel free to [browse the source code and make suggestions/requests here](https://github.com/israelmartins96/lorempress-for-wp/). Thanks!
