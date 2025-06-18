@@ -19,7 +19,6 @@
  * Donate link:         https://lightbulbdevs.com/lorempress/wp/donate/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:          https://lightbulbdevs.com/lorempress/wp/update/
  * Text Domain:         lorempress
  * Domain Path:         /languages/
  */
