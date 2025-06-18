@@ -4,19 +4,19 @@
  *
  * @package             LoremPress
  * @author              Lightbulb Devs
- * @copyright           Copyright (c) 2024, Lightbulb Devs
+ * @copyright           Copyright (c) 2025, Lightbulb Devs
  * @license             GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:         LoremPress
  * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
  * Description:         Add dummy text content as a placeholder while creating your WordPress website, web page, blog post etc.
- * Version:             0.1.0
+ * Version:             1.0.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
  * Author URI:          https://lightbulbdevs.com
- * Donate link:         https://lightbulbdevs.com/donate/lorempress/
+ * Donate link:         https://lightbulbdevs.com/lorempress/wp/donate/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:          https://lightbulbdevs.com/lorempress/wp/update/
@@ -39,8 +39,10 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-Copyright 2024 Lightbulb Devs
+Copyright 2025 Lightbulb Devs
  */
+
+use \LoremPress\Includes\Init;
 
 /**
  * Abort if this file is accessed directly.
@@ -50,16 +52,23 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Current plugin version.
  * 
- * @since 0.1.0
+ * @since 1.0.0
  */
-define( 'LOREMPRESS_VERSION', '0.1.0' );
+! defined( 'LOREMPRESS_VERSION' ) ? define( 'LOREMPRESS_VERSION', '1.0.0' ) : '';
 
 /**
  * Plugin root path.
  * 
- * @since 0.1.0
+ * @since 1.0.0
  */
-define( 'LOREMPRESS_PATH', plugin_dir_path( __FILE__ ) );
+! defined( 'LOREMPRESS_PLUGIN_PATH' ) ? define( 'LOREMPRESS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
+
+/**
+ * Plugin base URL.
+ * 
+ * @since 1.0.0
+ */
+! defined( 'LOREMPRESS_PLUGIN_URL' ) ? define( 'LOREMPRESS_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
 
 /**
  * Require Composer Autoload.
@@ -72,7 +81,7 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * Runs during plugin activation.
  * In includes/base/Activator.php
  * 
- * @since 0.1.0
+ * @since 1.0.0
  */
 function activate_lorempress() {
     \LoremPress\Includes\Base\Activator::activate();
@@ -82,7 +91,7 @@ function activate_lorempress() {
  * Runs during plugin deactivation.
  * In includes/base/Deactivator.php
  *
- * @since 0.1.0
+ * @since 1.0.0
  */
 function deactivate_lorempress() {
     \LoremPress\Includes\Base\Deactivator::deactivate();
@@ -97,3 +106,10 @@ register_activation_hook( __FILE__, 'activate_lorempress' );
  * Registers deactivation hook.
  */
 register_deactivation_hook( __FILE__, 'deactivate_lorempress' );
+
+/**
+ * Initialise LoremPress functionalities if the initialisation class exists.
+ */
+if ( class_exists( '\LoremPress\\Includes\\Init' ) ) {
+    Init::register_services();
+}
