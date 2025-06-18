@@ -1,3 +1,4 @@
 lorempress*.zip
-node_modules
+lorempress/
+node_modules/
 process.txt
