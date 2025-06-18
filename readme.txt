@@ -1,11 +1,11 @@
-=== LoremPress - Quick Dummy Text Placeholder ===
+=== LoremPress ===
 Contributors: israelmartins, lightbulbdevs
 Author URI: https://lightbulbdevs.com/
 Plugin URI: https://lightbulbdevs.com/lorempress/wp/
 Donate link: https://lightbulbdevs.com/lorempress/wp/donate/
 Tags:  lorem ipsum, dummy text, dummy content, placeholder
 Requires at least: 5.2
-Tested up to: 6.8.1
+Tested up to: 6.8
 Requires PHP: 7.2
 Stable tag: 1.0.0
 License: GPLv2 or later
