@@ -1,4 +1,4 @@
-=== LoremPress - Quick Dummy Text Placeholder for WordPress ===
+=== LoremPress - Quick Dummy Text Placeholder ===
 Contributors: israelmartins, lightbulbdevs
 Author URI: https://lightbulbdevs.com/
 Plugin URI: https://lightbulbdevs.com/lorempress/wp/

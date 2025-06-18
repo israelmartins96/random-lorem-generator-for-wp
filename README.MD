@@ -9,8 +9,7 @@ This is a developer's portal for Popup Maker and **should not** be used for supp
 ## Getting Started
 
 ### Downloading And Using As A Plugin
-To use this plugin, you must download from [the releases page](https://github.com/israelmartins96/lorempress-for-wp/releases). With each release, there is an attached zip, named something similar to `lorempress-for-wp_v1.0.0.zip
-`. Download the appropriate zip file and then upload into your WordPress site as a normal plugin.
+To use this plugin, you must download from [the releases page](https://github.com/israelmartins96/lorempress-for-wp/releases). With each release, there is an attached zip, named something similar to `lorempress-v1.0.0.zip`. Download the appropriate zip file and then upload into your WordPress site as a normal plugin.
 
 Once installed and activated:
 1. Go to wp-admin,

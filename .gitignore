@@ -1,3 +1,4 @@
-lorempress-for-wp.zip
-node_modules
+lorempress*.zip
+lorempress/
+node_modules/
 process.txt
