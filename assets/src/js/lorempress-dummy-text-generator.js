@@ -2,6 +2,11 @@
  * lorempress-dummy-text-generator.js
  * 
  * Generates random dummy text.
+ * 
+ * NOTE: The plugin uses the minified version of this code located in /wp-content/plugins/lorempress-for-wp/assets/js/.
+ * So, any change made to this file would have no effect on the plugin's functionality.
+ * To reflect any changes you make to this code, you have to use the Gulp setup. You can see
+ * how to configure that in the plugin's development repo: https://github.com/israelmartins96/lorempress-for-wp/
  */
 
 /**
