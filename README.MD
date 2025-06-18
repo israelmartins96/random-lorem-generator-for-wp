@@ -29,6 +29,9 @@ Community made feature requests, patches, localisations, bug reports, and contri
 
 If interested in contributing, feel free to reach out to lorempress@israelmartins.com.
 
+## Development Setup
+The development JavaScript files are located in assets/src/js/. The Gulp dependencies have to be installed with `npm` to compile the changes to the script in your development environment (to assets/js/). You may [check out the repo of the referenced Gulp setup here](https://github.com/israelmartins96/gulp).
+
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see [the releases in this repository](https://github.com/israelmartins96/lorempress-for-wp/releases).
 
