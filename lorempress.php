@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:         LoremPress
  * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
- * Description:         Add dummy text content as a placeholder while creating your WordPress website, web page, blog post etc.
+ * Description:         Use unique, pattern-free Lorem Ipsum placeholder text to sharpen your focus and streamline your workflow while creating your WordPress website, web page, blog post, etc.
  * Version:             1.0.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
