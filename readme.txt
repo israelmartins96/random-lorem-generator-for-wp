@@ -28,7 +28,7 @@ Whether you're developing themes, mocking up new pages, or testing layouts, Lore
 * **Lightweight and Performance-Optimised:** Designed to be minimal and not impact your site's performance.
 * **No Configuration Needed:** Works out of the box without any settings to adjust.
 
-Perfect for when you need realistic-looking placeholder paragraphs without the distraction of meaningful content, ensuring your designs and layouts are the focus.
+Perfect for when you need random and pattern-free placeholder paragraphs without any subtle distraction, ensuring your designs and layouts are the focus.
 
 == Installation ==
 
