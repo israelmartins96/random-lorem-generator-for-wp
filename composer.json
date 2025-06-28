@@ -1,12 +1,16 @@
 {
     "name": "lightbulb-devs/lorempress",
-    "description": "WordPress plugin to add dummy text content as a placeholder while creating a WordPress website, web page, blog post etc.",
+    "description": "WordPress plugin to add random and pattern-free placeholder paragraphs without any subtle distraction, ensuring designs and layouts are the focus.",
     "type": "project",
     "license": "GPL",
     "authors": [
         {
             "name": "Israel Martins",
             "email": "hello@israelmartins.com"
+        },
+        {
+            "name": "Lightbulb Devs",
+            "email": "support@lightbulbdevs.com"
         }
     ],
     "minimum-stability": "dev",
