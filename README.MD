@@ -4,7 +4,7 @@ All you need to quickly add lorem ipsum placeholder text paragraphs while creati
 Feel free to browse the code and make suggestions/requests. Thanks!
 
 ## Support
-This is a developer's portal for Popup Maker and **should not** be used for support. Please [create a support ticket here](https://wordpress.org/support/plugin/lorempress/).
+This is a developer's portal for LoremPress and **should not** be used for support. Please [create a support ticket here](https://wordpress.org/support/plugin/lorempress/).
 
 ## Getting Started
 
