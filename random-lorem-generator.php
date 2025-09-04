@@ -41,7 +41,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2025 Lightbulb Devs
  */
 
-use \LoremPress\Includes\Init;
+use \Random_Lorem_Generator\Includes\Init;
 
 /**
  * Abort if this file is accessed directly.
@@ -83,7 +83,7 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * @since 1.0.0
  */
 function activate_lorempress() {
-    \LoremPress\Includes\Base\Activator::activate();
+    \Random_Lorem_Generator\Includes\Base\Activator::activate();
 }
 
 /**
@@ -93,7 +93,7 @@ function activate_lorempress() {
  * @since 1.0.0
  */
 function deactivate_lorempress() {
-    \LoremPress\Includes\Base\Deactivator::deactivate();
+    \Random_Lorem_Generator\Includes\Base\Deactivator::deactivate();
 }
 
 /**
@@ -109,6 +109,6 @@ register_deactivation_hook( __FILE__, 'deactivate_lorempress' );
 /**
  * Initialise LoremPress functionalities if the initialisation class exists.
  */
-if ( class_exists( '\LoremPress\\Includes\\Init' ) ) {
+if ( class_exists( '\Random_Lorem_Generator\\Includes\\Init' ) ) {
     Init::register_services();
 }
