@@ -11,7 +11,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
-Use unique, pattern-free Lorem Ipsum dummy text as placeholder text to keep your focus sharp and streamline your workflow like never before while creating your WordPress website, web page, blog post, etc.
+Streamline your WordPress workflow like never before with unique, distraction-free Lorem Ipsum placeholder text from Random Lorem Generator.
 
 == Description ==
 

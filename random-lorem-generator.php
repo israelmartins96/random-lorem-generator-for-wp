@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:         Random Lorem Generator
  * Plugin URI:          https://lightbulbdevs.com/random-lorem-generator/wp/
- * Description:         Use unique, pattern-free Lorem Ipsum placeholder text to sharpen your focus and streamline your workflow while creating your WordPress website, web page, blog post, etc.
+ * Description:         Streamline your WordPress workflow like never before with unique, distraction-free Lorem Ipsum placeholder text from Random Lorem Generator.
  * Version:             1.0.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
