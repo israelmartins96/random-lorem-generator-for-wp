@@ -27,7 +27,7 @@ namespace Random_Lorem_Generator\Includes\Base;
  * @author Lightbulb Devs <dev@lightbulbdevs.com>
  */
 
-class i18n {
+class I18n {
 
     /**
      * Registers all the hooks necessary for the I18n class.
