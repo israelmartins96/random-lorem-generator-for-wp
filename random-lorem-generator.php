@@ -82,7 +82,7 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * 
  * @since 1.0.0
  */
-function activate_lorempress() {
+function random_lorem_generator_activate() {
     \Random_Lorem_Generator\Includes\Base\Activator::activate();
 }
 
@@ -92,19 +92,19 @@ function activate_lorempress() {
  *
  * @since 1.0.0
  */
-function deactivate_lorempress() {
+function random_lorem_generator_deactivate() {
     \Random_Lorem_Generator\Includes\Base\Deactivator::deactivate();
 }
 
 /**
  * Registers activation hook.
  */
-register_activation_hook( __FILE__, 'activate_lorempress' );
+register_activation_hook( __FILE__, 'random_lorem_generator_activate' );
 
 /**
  * Registers deactivation hook.
  */
-register_deactivation_hook( __FILE__, 'deactivate_lorempress' );
+register_deactivation_hook( __FILE__, 'random_lorem_generator_deactivate' );
 
 /**
  * Initialise LoremPress functionalities if the initialisation class exists.
