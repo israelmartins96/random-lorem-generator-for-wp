@@ -44,10 +44,10 @@ const paths = {
     current: '.',
     scripts: {
         src: {
-            main: 'assets/src/js/lorempress-dummy-text-generator.js',
+            main: 'assets/src/js/random-lorem-generator.js',
             dir: 'assets/src/js/',
             files: [
-                'lorempress-dummy-text-generator.js'
+                'random-lorem-generator.js'
             ]
         },
         dest: './assets/js/',

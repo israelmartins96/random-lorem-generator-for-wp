@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInite5f694a3b6e15f867f27dcb1fb8cf996
 {
     public static $prefixLengthsPsr4 = array (
-        'L' => 
+        'R' => 
         array (
-            'LoremPress\\Includes\\' => 20,
+            'Random_Lorem_Generator\\Includes\\' => 32,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'LoremPress\\Includes\\' => 
+        'Random_Lorem_Generator\\Includes\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),

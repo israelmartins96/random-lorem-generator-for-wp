@@ -5,12 +5,12 @@
  * 
  * @since 0.1.0
  * 
- * @package LoremPress
- * @subpackage LoremPress/Includes
+ * @package Random_Lorem_Generator
+ * @subpackage Random_Lorem_Generator/Includes
  * @version 1.0.0
  */
 
-namespace LoremPress\Includes\Base;
+namespace Random_Lorem_Generator\Includes\Base;
 
 /**
  * Fired during plugin deactivation.
@@ -18,9 +18,9 @@ namespace LoremPress\Includes\Base;
  * This class defines all code necessary to run during the plugin's deactivation.
  * 
  * @since 0.1.0
- * @package LoremPress
- * @subpackage LoremPress/Includes
- * @author Israel Martins <hello@israelmartins.com>
+ * @package Random_Lorem_Generator
+ * @subpackage Random_Lorem_Generator/Includes
+ * @author Lightbulb Devs <dev@lightbulbdevs.com>
  */
 class Deactivator {
     

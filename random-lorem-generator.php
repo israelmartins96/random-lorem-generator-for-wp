@@ -1,26 +1,26 @@
 <?php
 /**
- * LoremPress
+ * Random Lorem Generator
  *
- * @package             LoremPress
- * @author              Lightbulb Devs
+ * @package             Random_Lorem_Generator
+ * @author              Lightbulb Devs <dev@lightbulbdevs.com>
  * @copyright           Copyright (c) 2025, Lightbulb Devs
  * @license             GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:         LoremPress
- * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
- * Description:         Use unique, pattern-free Lorem Ipsum placeholder text to sharpen your focus and streamline your workflow while creating your WordPress website, web page, blog post, etc.
+ * Plugin Name:         Random Lorem Generator
+ * Plugin URI:          https://lightbulbdevs.com/random-lorem-generator/wp/
+ * Description:         Streamline your WordPress workflow like never before with unique, distraction-free Lorem Ipsum placeholder text from Random Lorem Generator.
  * Version:             1.0.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
  * Author URI:          https://lightbulbdevs.com
- * Donate link:         https://lightbulbdevs.com/lorempress/wp/donate/
+ * Donate link:         https://lightbulbdevs.com/random-lorem-generator/wp/contribute/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:         lorempress
- * Domain Path:         /languages/
+ * Text Domain:         random-lorem-generator
+ * Domain Path:         /languages
  */
 
 /*
@@ -41,7 +41,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2025 Lightbulb Devs
  */
 
-use \LoremPress\Includes\Init;
+use \Random_Lorem_Generator\Includes\Init;
 
 /**
  * Abort if this file is accessed directly.
@@ -53,21 +53,21 @@ defined( 'ABSPATH' ) || exit;
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_VERSION' ) ? define( 'LOREMPRESS_VERSION', '1.0.0' ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_VERSION' ) ? define( 'RANDOM_LOREM_GENERATOR_VERSION', '1.0.0' ) : '';
 
 /**
  * Plugin root path.
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_PLUGIN_PATH' ) ? define( 'LOREMPRESS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_PLUGIN_PATH' ) ? define( 'RANDOM_LOREM_GENERATOR_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
 
 /**
  * Plugin base URL.
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_PLUGIN_URL' ) ? define( 'LOREMPRESS_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_PLUGIN_URL' ) ? define( 'RANDOM_LOREM_GENERATOR_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
 
 /**
  * Require Composer Autoload.
@@ -82,8 +82,8 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * 
  * @since 1.0.0
  */
-function activate_lorempress() {
-    \LoremPress\Includes\Base\Activator::activate();
+function random_lorem_generator_activate() {
+    \Random_Lorem_Generator\Includes\Base\Activator::activate();
 }
 
 /**
@@ -92,23 +92,23 @@ function activate_lorempress() {
  *
  * @since 1.0.0
  */
-function deactivate_lorempress() {
-    \LoremPress\Includes\Base\Deactivator::deactivate();
+function random_lorem_generator_deactivate() {
+    \Random_Lorem_Generator\Includes\Base\Deactivator::deactivate();
 }
 
 /**
  * Registers activation hook.
  */
-register_activation_hook( __FILE__, 'activate_lorempress' );
+register_activation_hook( __FILE__, 'random_lorem_generator_activate' );
 
 /**
  * Registers deactivation hook.
  */
-register_deactivation_hook( __FILE__, 'deactivate_lorempress' );
+register_deactivation_hook( __FILE__, 'random_lorem_generator_deactivate' );
 
 /**
  * Initialise LoremPress functionalities if the initialisation class exists.
  */
-if ( class_exists( '\LoremPress\\Includes\\Init' ) ) {
+if ( class_exists( '\Random_Lorem_Generator\\Includes\\Init' ) ) {
     Init::register_services();
 }

@@ -1,7 +1,7 @@
 {
   "name": "random-lorem-generator-for-wp",
   "version": "1.0.0",
-  "description": "WordPress plugin for adding random and pattern-free placeholder paragraphs without any subtle distraction, ensuring designs and layouts are the focus.",
+  "description": "Plugin for WordPress to add random and pattern-free placeholder paragraphs to pages, posts, etc., eliminating subtle distractions and ensuring design and layout are the focus.",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": "Lightbulb Devs <support@lightbulbdevs.com>",
   "contributors": [
     "Israel Martins <hello@israelmartins.com>"
-  ]
+  ],
   "license": "GPL-3.0",
   "devDependencies": {
     "@babel/preset-env": "^7.25.3",

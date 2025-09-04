@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'LoremPress\\Includes\\' => array($baseDir . '/includes'),
+    'Random_Lorem_Generator\\Includes\\' => array($baseDir . '/includes'),
 );
