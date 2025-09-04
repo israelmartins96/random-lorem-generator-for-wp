@@ -12,7 +12,7 @@
  * Plugin URI:          https://lightbulbdevs.com/random-lorem-generator/wp/
  * Description:         Streamline your WordPress workflow like never before with unique, distraction-free Lorem Ipsum placeholder text from Random Lorem Generator.
  * Version:             1.0.0
- * Requires at least:   5.2
+ * Requires at least:   4.5
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
  * Author URI:          https://lightbulbdevs.com
