@@ -4,7 +4,7 @@ Author URI: https://lightbulbdevs.com/
 Plugin URI: https://lightbulbdevs.com/random-lorem-generator/wp/
 Donate link: https://lightbulbdevs.com/random-lorem-generator/wp/contribute/
 Tags:  lorem ipsum, dummy text, dummy content, placeholder
-Requires at least: 5.2
+Requires at least: 4.5
 Tested up to: 6.8
 Requires PHP: 7.2
 Stable tag: 1.0.0
