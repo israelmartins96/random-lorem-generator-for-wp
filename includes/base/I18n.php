@@ -43,6 +43,7 @@ class I18n {
         /**
          * Load the plugin's text domain during the 'init' action.
          * 
+         * Added for backward compatibility for WordPress versions older than 4.6.
          * Using 'init' because 'plugins_loaded' is before 'init' and 
          * is too early for loading translations.
          * 
