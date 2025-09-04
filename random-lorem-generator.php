@@ -16,7 +16,7 @@
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
  * Author URI:          https://lightbulbdevs.com
- * Donate link:         https://lightbulbdevs.com/random-lorem-generator/wp/donate/
+ * Donate link:         https://lightbulbdevs.com/random-lorem-generator/wp/contribute/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:         random-lorem-generator
@@ -53,21 +53,21 @@ defined( 'ABSPATH' ) || exit;
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_VERSION' ) ? define( 'LOREMPRESS_VERSION', '1.0.0' ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_VERSION' ) ? define( 'RANDOM_LOREM_GENERATOR_VERSION', '1.0.0' ) : '';
 
 /**
  * Plugin root path.
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_PLUGIN_PATH' ) ? define( 'LOREMPRESS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_PLUGIN_PATH' ) ? define( 'RANDOM_LOREM_GENERATOR_PLUGIN_PATH', plugin_dir_path( __FILE__ ) ) : '';
 
 /**
  * Plugin base URL.
  * 
  * @since 1.0.0
  */
-! defined( 'LOREMPRESS_PLUGIN_URL' ) ? define( 'LOREMPRESS_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
+! defined( 'RANDOM_LOREM_GENERATOR_PLUGIN_URL' ) ? define( 'RANDOM_LOREM_GENERATOR_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) : '';
 
 /**
  * Require Composer Autoload.
