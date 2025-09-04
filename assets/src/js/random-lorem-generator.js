@@ -1,20 +1,20 @@
 /**
- * lorempress-dummy-text-generator.js
+ * random-lorem-generator.js
  * 
  * Generates random dummy text.
  * 
- * NOTE: The plugin uses the minified version of this code located in /wp-content/plugins/lorempress-for-wp/assets/js/.
+ * NOTE: The plugin uses the minified version of this code located in /wp-content/plugins/random-lorem-generator/assets/js/.
  * So, any change made to this file would have no effect on the plugin's functionality.
  * To reflect any changes you make to this code, you have to use the Gulp setup. You can see
- * how to configure that in the plugin's development repo: https://github.com/israelmartins96/lorempress-for-wp/
+ * how to configure that in the plugin's development repo: https://github.com/israelmartins96/random-lorem-generator-for-wp/
  */
 
 /**
- * Initialises the LoremPress text generator.
+ * Initialises the Random Lorem Generator text generator.
  * 
  * Sets up constants, helper functions, and triggers the text generation process.
  */
-const initLoremPressGenerator = () => {
+const initRandomLoremGenerator = () => {
     /**
      * @type {string} theParagraph - Stores the generated paragraph.
      */
@@ -227,14 +227,14 @@ const initLoremPressGenerator = () => {
     };
     
     /**
-     * @constant {string} loremPressShortcodeParagraphClass - The CSS class used to identify paragraphs where dummy text should be inserted.
+     * @constant {string} randomLoremGeneratorShortcodeParagraphClass - The CSS class used to identify paragraphs where dummy text should be inserted.
      */
-    const loremPressShortcodeParagraphClass = '.lorempress-shortcode-pargraph';
+    const randomLoremGeneratorShortcodeParagraphClass = '.random-lorem-generator-shortcode-pargraph';
 
     /**
-     * @type {NodeListOf<Element>} loremPressShortcodeParagraphs - A NodeList of all elements matching the shortcode paragraph class.
+     * @type {NodeListOf<Element>} randomLoremGeneratorShortcodeParagraphs - A NodeList of all elements matching the shortcode paragraph class.
      */
-    const loremPressShortcodeParagraphs = document.querySelectorAll(loremPressShortcodeParagraphClass);
+    const randomLoremGeneratorShortcodeParagraphs = document.querySelectorAll(randomLoremGeneratorShortcodeParagraphClass);
     
     /**
      * Fetches dummy text data, processes it, and generates paragraphs to be inserted into the DOM.
@@ -245,12 +245,12 @@ const initLoremPressGenerator = () => {
         const xhr = new XMLHttpRequest();
 
         /**
-         * loremPressData is made globally available via wp_localize_script from the main plugin file (lorempress-for-wp.php).
+         * randomLoremGeneratorData is made globally available via wp_localize_script from the main plugin file (random-lorem-generator.php).
          * 
          * It contains the base URL for the plugin.
          */
-        const baseURL = loremPressData.pluginURL;
-        const dataPath = 'assets/data/lorempress-dummy-text-source.json';
+        const baseURL = randomLoremGeneratorData.pluginURL;
+        const dataPath = 'assets/data/random-lorem-generator-dummy-text-source.json';
 
         /**
          * Open an asynchronous GET request to the JSON data file.
@@ -298,7 +298,7 @@ const initLoremPressGenerator = () => {
                 /**
                  * Check if there are more target paragraphs than already generated paragraphs.
                  */
-                if (loremPressShortcodeParagraphs.length > arrayOfParagraphs.length) {
+                if (randomLoremGeneratorShortcodeParagraphs.length > arrayOfParagraphs.length) {
                     /**
                      * Add the newly generated paragraph to the array of paragraphs.
                      */
@@ -307,12 +307,12 @@ const initLoremPressGenerator = () => {
                     /**
                      * Insert the generated paragraph text into the current target paragraph element.
                      */
-                    loremPressShortcodeParagraphs[paragraphIndex].innerHTML = arrayOfParagraphs[paragraphIndex];
+                    randomLoremGeneratorShortcodeParagraphs[paragraphIndex].innerHTML = arrayOfParagraphs[paragraphIndex];
 
                     /**
                      * If there are still more paragraphs to generate, increment the index.
                      */
-                    if (loremPressShortcodeParagraphs.length > arrayOfParagraphs.length) {
+                    if (randomLoremGeneratorShortcodeParagraphs.length > arrayOfParagraphs.length) {
                         paragraphIndex++;
                     }
 
@@ -337,6 +337,6 @@ const initLoremPressGenerator = () => {
 };
 
 /**
- * Trigger the initialization of the LoremPress generator once the entire HTML document has been completely loaded and parsed.
+ * Trigger the initialization of the Random Lorem Generator once the entire HTML document has been completely loaded and parsed.
  */
-document.addEventListener('DOMContentLoaded', initLoremPressGenerator);
+document.addEventListener('DOMContentLoaded', initRandomLoremGenerator);
