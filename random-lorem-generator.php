@@ -1,25 +1,25 @@
 <?php
 /**
- * LoremPress
+ * Random Lorem Generator
  *
- * @package             LoremPress
- * @author              Lightbulb Devs
+ * @package             Random_Lorem_Generator
+ * @author              Lightbulb Devs <dev@lightbulbdevs.com>
  * @copyright           Copyright (c) 2025, Lightbulb Devs
  * @license             GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:         LoremPress
- * Plugin URI:          https://lightbulbdevs.com/lorempress/wp/
+ * Plugin Name:         Random Lorem Generator
+ * Plugin URI:          https://lightbulbdevs.com/random-lorem-generator/wp/
  * Description:         Use unique, pattern-free Lorem Ipsum placeholder text to sharpen your focus and streamline your workflow while creating your WordPress website, web page, blog post, etc.
  * Version:             1.0.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              Lightbulb Devs
  * Author URI:          https://lightbulbdevs.com
- * Donate link:         https://lightbulbdevs.com/lorempress/wp/donate/
+ * Donate link:         https://lightbulbdevs.com/random-lorem-generator/wp/donate/
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:         lorempress
+ * Text Domain:         random-lorem-generator
  * Domain Path:         /languages/
  */
 
