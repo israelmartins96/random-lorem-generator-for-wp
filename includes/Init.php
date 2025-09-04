@@ -1,30 +1,30 @@
 <?php
 
 /**
- * Core initialiser for the LoremPress plugin.
+ * Core initialiser for the Random Lorem Generator plugin.
  * 
  * This file is responsible for gathering and registering all the essential
  * service classes that comprise the plugin's functionality.
  * 
  * @since 1.0.0
  * 
- * @package LoremPress
- * @subpackage LoremPress/Includes
+ * @package Random_Lorem_Generator
+ * @subpackage Random_Lorem_Generator/Includes
  * @version 1.0.0
  */
 
-namespace LoremPress\Includes;
+namespace Random_Lorem_Generator\Includes;
 
 /**
- * Main initialiser class for the LoremPress plugin.
+ * Main initialiser class for the Random Lorem Generator plugin.
  * 
  * This class orchestrates the registration of all plugin services,
  * ensuring that all components are properly set up and hooked into WordPress.
  * 
  * @since 1.0.0
- * @package LoremPress
- * @subpackage LoremPress/Includes
- * @author Israel Martins <hello@israelmartins.com>
+ * @package Random_Lorem_Generator
+ * @subpackage Random_Lorem_Generator/Includes
+ * @author Lightbulb Devs <dev@lightbulbdevs.com>
  */
 final class Init {
     
@@ -39,8 +39,8 @@ final class Init {
     */
     public static function get_services() {
         $services = array(
-            \LoremPress\Includes\Base\Enqueue::class,
-            \LoremPress\Includes\Shortcodes\LoremPress_Shortcode::class
+            \Random_Lorem_Generator\Includes\Base\Enqueue::class,
+            \Random_Lorem_Generator\Includes\Shortcodes\Random_Lorem_Shortcode::class
         );
         
         return $services;
