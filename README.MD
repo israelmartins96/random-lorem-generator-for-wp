@@ -1,5 +1,5 @@
 # Random Lorem Generator (RLG)
-All you need to quickly add lorem ipsum placeholder text paragraphs while creating your WordPress website, web page, blog post, etc.
+Streamline your WordPress workflow like never before with unique, distraction-free Lorem Ipsum placeholder text from Random Lorem Generator.
 
 Feel free to browse the code and make suggestions/requests. Thanks!
 
