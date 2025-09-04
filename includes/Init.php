@@ -40,6 +40,7 @@ final class Init {
     public static function get_services() {
         $services = array(
             \Random_Lorem_Generator\Includes\Base\Enqueue::class,
+            \Random_Lorem_Generator\Includes\Base\I18n::class,
             \Random_Lorem_Generator\Includes\Shortcodes\Random_Lorem_Shortcode::class
         );
         
